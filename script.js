@@ -96,7 +96,7 @@ function initMap() {
     const infoWindow = new google.maps.InfoWindow({
         content: `
             <div style="padding: 10px;">
-                <h3 style="margin: 0 0 10px 0; color: #1e40af; font-weight: 700;">निवाली ग्रामपंचायत</h3>
+                <h3 style="margin: 0 0 10px 0; color: #1e40af; font-weight: 700;">ग्रामपंचायत निवळी</h3>
                 <p style="margin: 5px 0;"><strong>Nivali Gram Panchayat</strong></p>
                 <p style="margin: 5px 0;">Taluka: Chiplun</p>
                 <p style="margin: 5px 0;">District: Satara</p>
