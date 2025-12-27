@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Google Maps initialization (only used if API key is configured)
 function initMap() {
-    // Coordinates for Nivali, Chiplun, Satara, Maharashtra
+    // Coordinates for Nivali, Chiplun, Ratnagiri, Maharashtra
     // Using approximate coordinates - you may need to adjust these
     const nivaliLocation = { lat: 17.5333, lng: 73.5094 };
     
@@ -99,7 +99,7 @@ function initMap() {
                 <h3 style="margin: 0 0 10px 0; color: #1e40af; font-weight: 700;">ग्रामपंचायत निवळी</h3>
                 <p style="margin: 5px 0;"><strong>Nivali Gram Panchayat</strong></p>
                 <p style="margin: 5px 0;">Taluka: Chiplun</p>
-                <p style="margin: 5px 0;">District: Satara</p>
+                <p style="margin: 5px 0;">District: Ratnagiri</p>
                 <p style="margin: 5px 0;">Maharashtra - 415641</p>
             </div>
         `
@@ -114,7 +114,7 @@ function initMap() {
     if (typeof google !== 'undefined' && google.maps && google.maps.Geocoder) {
         const geocoder = new google.maps.Geocoder();
         geocoder.geocode(
-            { address: 'Nivali, Chiplun, Satara, Maharashtra, India' },
+            { address: 'Nivali, Chiplun, Ratnagiri, Maharashtra, India' },
             function(results, status) {
                 if (status === 'OK' && results[0]) {
                     const accurateLocation = results[0].geometry.location;
@@ -134,7 +134,7 @@ if (typeof window !== 'undefined') {
             // Fallback to embedded iframe if API fails
             mapContainer.innerHTML = `
                 <iframe 
-                    src="https://www.google.com/maps?q=Nivali,+Chiplun,+Satara,+Maharashtra,+India&output=embed" 
+                    src="https://www.google.com/maps?q=Nivali,+Chiplun,+Ratnagiri,+Maharashtra,+India&output=embed" 
                     width="100%" 
                     height="100%" 
                     style="border:0;" 

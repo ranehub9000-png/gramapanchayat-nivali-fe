@@ -1,6 +1,6 @@
 # Nivali Gram Panchayat Website
 
-Official website for Nivali Gram Panchayat, Taluka Chiplun, District Satara, Maharashtra.
+Official website for Nivali Gram Panchayat, Taluka Chiplun, District Ratnagiri, Maharashtra.
 
 ## Features
 
