@@ -360,7 +360,33 @@ section {
 .population-table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 500px;
+    min-width: 800px;
+    font-size: 0.95rem;
+}
+
+.population-table th {
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    padding: 15px 10px;
+}
+
+.population-table td {
+    font-size: 0.95rem;
+    padding: 12px 10px;
+}
+
+.population-table .total-row {
+    background-color: #f0f9ff;
+    font-weight: 700;
+}
+
+.population-table .total-row td {
+    font-weight: 700;
+    color: var(--primary-color);
+    border-top: 3px solid var(--primary-color);
 }
 
 .population-table thead {
@@ -368,32 +394,12 @@ section {
     color: var(--white);
 }
 
-.population-table th,
-.population-table td {
-    padding: 20px;
-    text-align: left;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.population-table th {
-    font-weight: 700;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
 .population-table tbody tr:hover {
     background-color: var(--bg-light);
 }
 
-.population-table tbody tr:last-child td {
-    border-bottom: none;
-}
-
-.population-table td {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-dark);
+.population-table tbody tr:not(.total-row):last-child td {
+    border-bottom: 1px solid #e5e7eb;
 }
 
 /* Villages Section */
@@ -402,24 +408,26 @@ section {
 }
 
 .villages-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
 }
 
 .village-item {
     background: linear-gradient(135deg, var(--accent-color) 0%, #047857 100%);
     color: var(--white);
-    padding: 25px 40px;
+    padding: 20px 30px;
     border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease;
+    width: 100%;
+    justify-content: center;
 }
 
 .village-item:hover {
